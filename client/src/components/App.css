@@ -1,0 +1,90 @@
+*:focus {
+  outline:none!important;
+}
+
+.App {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.logo {
+  max-width: 100%;
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.login-form {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto 0;
+  background: #F5F5F5;
+  border: 1px solid #E9E9E9;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  margin: 30px 0 0;
+}
+
+code {
+  font-size: 18px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+input {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #dadada;
+  width: 100%;
+  max-width: 280px;
+  height: 37px;
+  margin: 15px 0;
+  font-size: 18px;
+  padding: 2px 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background: #00d1b2;
+  border:none;
+  padding:8px 12px;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%;
+  max-width: 280px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 30px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.error {
+  background: #f95858;
+}
+
+button.default {
+  background: #5d5a5a;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
