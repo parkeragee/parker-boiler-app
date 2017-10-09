@@ -2,6 +2,10 @@
   outline:none!important;
 }
 
+.navbar {
+  margin-bottom: 60px;
+}
+
 .App {
   text-align: center;
   padding: 0 20px;
@@ -23,6 +27,17 @@
 
 .App-intro {
   font-size: large;
+}
+
+.alt-action {
+  display: block;
+  margin-top: 18px;
+}
+
+.alt-action > span {
+  color: #00d1b2;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .login-form {
@@ -60,7 +75,7 @@ input {
   box-sizing: border-box;
 }
 
-button {
+button.btn {
   background: #00d1b2;
   border:none;
   padding:8px 12px;

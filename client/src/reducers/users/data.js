@@ -4,8 +4,12 @@
  * @param  {Object} action The interaction that triggered a change
  * @returns {int} The total number of segments
  */
-export default function rowCount (state = null, action) {
+export default function data (state = [], action) {
     switch (action.type) {
+        case 'USERS_FETCHED':
+            return action.data;
+        case 'USER_LOGGED_OUT':
+            return [];
         default:
             return state;
     }

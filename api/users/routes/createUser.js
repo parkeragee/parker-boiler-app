@@ -28,7 +28,7 @@ module.exports = {
     handler: (req, res) => {
       let user = new User();
       user.email = req.payload.email;
-      user.admin = false;
+      user.admin = true;
       hashPassword(req.payload.password, (err, hash) => {
         if (err) {
           throw Boom.badRequest(err);

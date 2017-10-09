@@ -1,8 +1,14 @@
 import { combineReducers } from 'redux';
-import test from './test';
+import currentUser from './current-user';
+import account from './account';
+import users from './users';
+import modal from './modal';
 
 const rootReducer = combineReducers({
-    test,
+    currentUser,
+    account,
+    users,
+    modal,
 });
 
 export default rootReducer;

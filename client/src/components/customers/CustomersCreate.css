@@ -1,0 +1,10 @@
+.customer-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#add-custom-field {
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+}
