@@ -22,6 +22,7 @@
     "mongoose": "^4.4.5"
   },
   "scripts": {
-    "serve": "source .env && nodemon server.js"
+    "serve": "source .env && nodemon server.js",
+    "deploy": "cd client && npm run build && mv build/index.html build/200.html && surge build [domain.com]"
   }
 }
