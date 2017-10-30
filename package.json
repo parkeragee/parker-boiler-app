@@ -1,7 +1,7 @@
 {
-  "name": "hapi-jwt-authentication",
+  "name": "parker-starter-app",
   "version": "0.0.0",
-  "description": "Sample API for protecting routes with JWT authentication",
+  "description": "Starter SaSS app",
   "main": "server.js",
   "keywords": [
     "authentication",
