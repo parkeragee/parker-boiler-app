@@ -1,3 +1,5 @@
+[![Dependency Status](https://david-dm.org/parkeragee/parker-boiler-app.svg)](https://david-dm.org/parkeragee/parker-boiler-app)
+
 ### Getting started
 
 - `git clone git@github.com:parkeragee/parker-boiler-app.git`
