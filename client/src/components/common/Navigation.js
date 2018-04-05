@@ -48,7 +48,7 @@ class Navigation extends Component {
 
     render() {
         return (
-            <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-dark" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a onClick={() => this.handleRedirect('')} className="navbar-item">
                         <img src="//bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma"/>

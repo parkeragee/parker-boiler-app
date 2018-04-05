@@ -1,4 +1,4 @@
-const API_URL = window.location.host.includes('localhost') ? 'http://localhost:3001' : 'https://fast-atoll-10374.herokuapp.com';
+const API_URL = window.location.host.includes('localhost') ? 'http://localhost:3001' : '[production_url]';
 
 export function saveAcctInfo (acctInfo) {
     const id_token = localStorage.getItem('id_token');
