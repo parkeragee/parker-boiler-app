@@ -1,11 +1,22 @@
-const API_URL = window.location.host.includes('localhost') ? 'http://localhost:3001' : 'https://fast-atoll-10374.herokuapp.com';
+const API_URL = window.location.host.includes('localhost') ? 'http://localhost:3001' : 'https://stormy-dusk-49537.herokuapp.com';
 
-export function checkAuth(history, props) {
+export function checkAuth() {
     const token = localStorage.getItem('id_token');
-    if (token === null) {
+    const userData = localStorage.getItem('user');
+    const pathname = window.location.pathname;
+
+    const unauthedRoutes = [
+        '/dashboard',
+    ];
+
+    if (!unauthedRoutes.includes(pathname)) {
+        return false;
+    }
+
+    if (token === null || userData === null) {
         localStorage.removeItem('id_token');
         localStorage.removeItem('user');
-        return history.push('/');
+        return window.location.href = '/login';
     } else {
         fetch(`${API_URL}/api/hb`, {
             headers: new Headers({'Authorization': `Bearer ${token}`})
@@ -15,9 +26,9 @@ export function checkAuth(history, props) {
             if (data.statusCode === 401) {
                 localStorage.removeItem('id_token');
                 localStorage.removeItem('user');
-                return history.push('/');
+                return window.location.href = '/login';
             } else {
-                return true;
+                return false;
             }
         }).catch(err => {
             console.log('error', err);

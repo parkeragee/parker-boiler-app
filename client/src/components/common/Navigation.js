@@ -60,10 +60,6 @@ class Navigation extends Component {
                     </div>
                 </div>
                 <div className={`navbar-menu ${this.state.mobileMenuActive ? 'is-active' : ''}`}>
-                    <div className="navbar-start">
-                        <a onClick={() => this.handleRedirect('customers')} className={`navbar-item${this._checkActiveState('customers') ? ' is-active' : ''}`}><i className="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Customers</a>
-                        <a onClick={() => this.handleRedirect('schedule')} className={`navbar-item${this._checkActiveState('schedule') ? ' is-active' : ''}`}><i className="fa fa-calendar" aria-hidden="true"></i>&nbsp;Schedule</a>
-                    </div>
                     <div className="navbar-end">
                         <a onClick={() => this.handleRedirect('account')} className={`navbar-item${this._checkActiveState('account') ? ' is-active' : ''}`}><i className="fa fa-cog" aria-hidden="true"></i>&nbsp;Account</a>
                         <a onClick={() => this.handleLogout()} className="navbar-item"><i className="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>

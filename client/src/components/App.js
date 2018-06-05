@@ -122,7 +122,6 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="login-form">
-                    <img className="logo" src="../../logo.svg" alt=""/>
                     <input autoFocus='autoFocus' onKeyUp={e => this.handleKeyUp(e)} placeholder="Email" autoComplete="on" value={this.state.email} onChange={e => this.handleEmail(e.target.value)} type="email"/><br/>
                     {this.state.formMode === 'create' || this.state.formMode === 'login' ?
                         (

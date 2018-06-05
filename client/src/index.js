@@ -6,6 +6,10 @@ import App from './containers/app';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import store from './store';
+import {checkAuth} from './utils/check-auth';
+
+const heartbeatInterval = 1000 * 10; // in milliseconds
+setInterval(checkAuth, heartbeatInterval);
 
 ReactDOM.render((
     <Provider store={store}>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navigation from '../common/Navigation';
-import {checkAuth} from '../../utils/check-auth';
 import {saveAccount} from '../../actions/accounts';
 
 class Account extends Component {
@@ -16,10 +15,6 @@ class Account extends Component {
             state: '',
             zipCode: '',
         };
-    }
-
-    componentWillMount() {
-        checkAuth(this.props.history, this.props);
     }
 
     componentWillReceiveProps (newProps) {
