@@ -8,10 +8,11 @@
 
 ### Client commands
 
-- Start app - `npm start`
-- Deploy frontend app - `npm run deploy`
+- Start app - `npm start` (from the `client` directory)
+- Compile styles - `grunt` (from the `client` directory)
+- Deploy frontend app - `npm run deploy` (from the `client` directory)
 
 ### API commands
 
-- Start API - `npm run serve`
+- Start API - `npm run serve` (must have a valid `.env` file in the root directory)
 - Deploy API - `git push heroku master`

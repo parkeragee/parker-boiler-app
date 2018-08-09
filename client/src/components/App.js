@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import {login, createAccount, resetPassword} from '../actions/user';
 
 class App extends Component {

@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import App from './containers/app';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
 import store from './store';
 import {checkAuth} from './utils/check-auth';
 
