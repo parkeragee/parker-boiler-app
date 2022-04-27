@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "react-scripts": "1.0.10",
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0"
