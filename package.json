@@ -19,7 +19,7 @@
     "joi": "^13.3.0",
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.2.2",
-    "mongoose": "^5.1.4"
+    "mongoose": "^4.13.21"
   },
   "scripts": {
     "serve": "source .env && nodemon server.js"
