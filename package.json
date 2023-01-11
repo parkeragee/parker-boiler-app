@@ -18,7 +18,7 @@
     "hapi-auth-jwt": "^4.0.0",
     "joi": "^13.3.0",
     "joi-objectid": "^2.0.0",
-    "jsonwebtoken": "^8.2.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.1.4"
   },
   "scripts": {
